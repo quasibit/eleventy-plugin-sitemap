@@ -30,9 +30,14 @@
     "url": "https://github.com/Quasibit/eleventy-plugin-sitemap/issues"
   },
   "homepage": "https://github.com/Quasibit/eleventy-plugin-sitemap#readme",
+  "dependencies": {
+    "sitemap": "^6.1.5"
+  },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.2.0",
@@ -40,7 +45,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "semantic-release": "^17.0.8"
   },
   "peerDependencies": {
     "@11ty/eleventy": "^0.11.0"
@@ -61,8 +67,5 @@
       "eslint --cache --fix",
       "prettier --write"
     ]
-  },
-  "dependencies": {
-    "sitemap": "^6.1.5"
   }
 }
