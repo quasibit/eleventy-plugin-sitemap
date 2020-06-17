@@ -4,7 +4,9 @@
   "description": "Eleventy plugin to generate a sitemap.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:prettier",
+    "test:prettier": "prettier --check ./**/*.js",
+    "format": "prettier --write ./**/*.js",
     "commit": "git-cz"
   },
   "repository": {
@@ -23,7 +25,8 @@
     "@commitlint/config-conventional": "^8.3.4",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5"
   },
   "config": {
     "commitizen": {
