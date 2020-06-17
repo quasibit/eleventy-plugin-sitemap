@@ -36,7 +36,7 @@ module.exports = function(eleventyConfig) {
 
 ## Usage
 
-Create a sitemap file and use the shortcode:
+Create a sitemap file and use the shortcode to generate the sitemap XML:
 
 ```njk
 ---
@@ -47,9 +47,12 @@ eleventyExcludeFromCollections: true
 {% sitemap collections.all %}
 ```
 
-The above snippet sets the permalink to `/sitemap.xml`, disables any layout,
-excludes the sitemap itself from Eleventy collections, and then calls the
-`sitemap` shortcode.
+The above snippet does the following:
+
+- Sets the permalink to `/sitemap.xml`.
+- Disables any [layout](https://www.11ty.dev/docs/layouts/).
+- Excludes the sitemap file from Eleventy collections.
+- Calls the `sitemap` shortcode.
 
 As the first argument to the shortcode, you pass the collection of items that
 you want to use in the sitemap.
@@ -60,6 +63,12 @@ You can also copy this sample from the examples and adapt it to your needs:
 
 ```sh
 cp node_modules/eleventy-plugin-sitemap/examples/sitemap.njk sitemap.njk
+```
+
+After creating the sitemap, you should add the sitemap to `robots.txt`:
+
+```txt
+Sitemap: https://example.com/sitemap.xml
 ```
 
 ## Options
