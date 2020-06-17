@@ -1,8 +1,15 @@
 # eleventy-plugin-sitemap
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Eleventy](https://www.11ty.dev/) plugin to generate a sitemap using [ekalinin/sitemap](https://github.com/ekalinin/sitemap.js) generator.
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Options](#options)
+- [Advanced usage](#advanced-usage)
+- [License](#license)
 
 ## Installation
 
@@ -183,3 +190,8 @@ And then pass that collection to the sitemap shortcode:
 ```njk
 {% sitemap collections.sitemap %}
 ```
+
+
+## License
+
+MIT. See [LICENSE](./LICENSE).
