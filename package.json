@@ -14,8 +14,17 @@
     "type": "git",
     "url": "git+https://github.com/Quasibit/eleventy-plugin-sitemap.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "eleventy-plugin",
+    "sitemap"
+  ],
+  "author": {
+    "name": "Nuno Freitas",
+    "email": "nuno.freitas@quasibit.com",
+    "homepage": "https://www.quasibit.com/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Quasibit/eleventy-plugin-sitemap/issues"
