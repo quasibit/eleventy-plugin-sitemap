@@ -13,6 +13,7 @@
 - [Usage](#usage)
 - [Options](#options)
 - [Advanced usage](#advanced-usage)
+- [Maintainers](#maintainers)
 - [License](#license)
 
 ## Installation
@@ -204,6 +205,9 @@ And then pass that collection to the sitemap shortcode:
 {% sitemap collections.sitemap %}
 ```
 
+## Maintainers
+
+- [@nunof07](https://github.com/nunof07)
 
 ## License
 
