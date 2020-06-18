@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Quasibit/eleventy-plugin-sitemap.git"
+    "url": "git+https://github.com/quasibit/eleventy-plugin-sitemap.git"
   },
   "keywords": [
     "11ty",
@@ -27,9 +27,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Quasibit/eleventy-plugin-sitemap/issues"
+    "url": "https://github.com/quasibit/eleventy-plugin-sitemap/issues"
   },
-  "homepage": "https://github.com/Quasibit/eleventy-plugin-sitemap#readme",
+  "homepage": "https://github.com/quasibit/eleventy-plugin-sitemap#readme",
   "dependencies": {
     "sitemap": "^6.1.5"
   },
