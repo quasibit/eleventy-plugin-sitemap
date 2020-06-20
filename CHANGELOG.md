@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v1.0.0...v1.0.1) (2020-06-20)
+
+
+### Bug Fixes
+
+* **lastmod:** accept string dates and bail on empty value ([f7434da](https://github.com/quasibit/eleventy-plugin-sitemap/commit/f7434dadb534e32728f8ab28d66b063948ab6dff))
+* **lastmod:** bail on empty date ([2dd357f](https://github.com/quasibit/eleventy-plugin-sitemap/commit/2dd357f2d4b65b7bc87826dfb0182d5b6b1afbdc))
+
 # 1.0.0 (2020-06-17)
 
 
