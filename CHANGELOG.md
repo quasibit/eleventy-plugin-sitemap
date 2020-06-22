@@ -3,12 +3,12 @@
 
 ### Features
 
-* publish package ([755bac5](https://github.com/quasibit/eleventy-plugin-sitemap/commit/755bac56bd7ccca7fb2f2666ee84444caba4c0cf))
+* publish package in new scope ([755bac5](https://github.com/quasibit/eleventy-plugin-sitemap/commit/755bac56bd7ccca7fb2f2666ee84444caba4c0cf))
 
 
 ### BREAKING CHANGES
 
-* Publish package under new scope
+* Publish package under new scope. New package name: "@quasibit/eleventy-plugin-sitemap". Previous package name: "eleventy-plugin-sitemap".
 
 ## [1.0.1](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v1.0.0...v1.0.1) (2020-06-20)
 
