@@ -213,3 +213,4 @@ And then pass that collection to the sitemap shortcode:
 ## License
 
 MIT. See [LICENSE](./LICENSE).
+
