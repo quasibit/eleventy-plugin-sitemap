@@ -1,5 +1,9 @@
 {
-  "name": "eleventy-plugin-sitemap",
+  "name": "@quasibit/eleventy-plugin-sitemap",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.1",
   "description": "Eleventy plugin to generate a sitemap.",
   "main": ".eleventy.js",

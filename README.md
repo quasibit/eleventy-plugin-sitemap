@@ -1,11 +1,12 @@
 # eleventy-plugin-sitemap
 
+[![npm](https://img.shields.io/npm/v/@quasibit/eleventy-plugin-sitemap)](https://www.npmjs.com/package/@quasibit/eleventy-plugin-sitemap)
 [![Release workflow](https://github.com/quasibit/eleventy-plugin-sitemap/workflows/Release/badge.svg)](https://github.com/quasibit/eleventy-plugin-sitemap/actions?query=workflow%3ARelease)
 [![Test workflow](https://github.com/quasibit/eleventy-plugin-sitemap/workflows/Test/badge.svg)](https://github.com/quasibit/eleventy-plugin-sitemap/actions?query=workflow%3ATest)
-[![npm](https://img.shields.io/npm/v/eleventy-plugin-sitemap)](https://www.npmjs.com/package/eleventy-plugin-sitemap)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 [Eleventy](https://www.11ty.dev/) plugin to generate a sitemap using [ekalinin/sitemap](https://github.com/ekalinin/sitemap.js) generator.
 
@@ -21,14 +22,14 @@
 Install the package:
 
 ```sh
-npm install --save eleventy-plugin-sitemap
+npm install --save @quasibit/eleventy-plugin-sitemap
 ```
 
 Add the plugin to your [Eleventy configuration](https://www.11ty.dev/docs/config/)
 (usually `.eleventy.js`):
 
 ```js
-const sitemap = require("eleventy-plugin-sitemap");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(sitemap, {
@@ -67,7 +68,7 @@ This shortcode is available for Liquid, Nunjucks, and Javascript templates.
 You can also copy this sample from the examples and adapt it to your needs:
 
 ```sh
-cp node_modules/eleventy-plugin-sitemap/examples/sitemap.njk sitemap.njk
+cp node_modules/@quasibit/eleventy-plugin-sitemap/examples/sitemap.njk sitemap.njk
 ```
 
 After creating the sitemap, you should add the sitemap to `robots.txt`:
