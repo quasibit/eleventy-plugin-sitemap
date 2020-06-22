@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v1.0.1...v2.0.0) (2020-06-22)
+
+
+### Features
+
+* publish package ([755bac5](https://github.com/quasibit/eleventy-plugin-sitemap/commit/755bac56bd7ccca7fb2f2666ee84444caba4c0cf))
+
+
+### BREAKING CHANGES
+
+* Publish package under new scope
+
 ## [1.0.1](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v1.0.0...v1.0.1) (2020-06-20)
 
 
