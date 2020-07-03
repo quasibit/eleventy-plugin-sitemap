@@ -5,6 +5,9 @@
     "access": "public"
   },
   "version": "2.0.0",
+  "engines": {
+      "node": ">=10.0.0"
+  },
   "description": "Eleventy plugin to generate a sitemap.",
   "main": ".eleventy.js",
   "scripts": {
