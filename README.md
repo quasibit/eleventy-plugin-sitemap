@@ -14,6 +14,7 @@
 - [Usage](#usage)
 - [Options](#options)
 - [Advanced usage](#advanced-usage)
+- [Related plugins](#related-plugins)
 - [Maintainers](#maintainers)
 - [License](#license)
 
@@ -205,6 +206,10 @@ And then pass that collection to the sitemap shortcode:
 ```njk
 {% sitemap collections.sitemap %}
 ```
+
+## Related plugins
+
+- [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema): generate JSON-LD structured data.
 
 ## Maintainers
 
