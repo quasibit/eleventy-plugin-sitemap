@@ -6,14 +6,16 @@
   },
   "version": "2.0.0",
   "engines": {
-      "node": ">=10.0.0"
+    "node": ">=10.0.0"
   },
   "description": "Eleventy plugin to generate a sitemap.",
   "main": ".eleventy.js",
   "scripts": {
+    "demo": "npx @11ty/eleventy --input=examples --output=examples/_site --config=examples/.eleventy.js",
     "test": "run-p -c test:*",
     "test:eslint": "eslint \"./**/*.js\" --color",
     "test:prettier": "prettier --check ./**/*.js",
+    "test:demo": "npm run demo",
     "format": "prettier --write ./**/*.js",
     "commit": "git-cz"
   },

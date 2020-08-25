@@ -7,7 +7,6 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
 [Eleventy](https://www.11ty.dev/) plugin to generate a sitemap using [ekalinin/sitemap](https://github.com/ekalinin/sitemap.js) generator.
 
 - [Installation](#installation)
@@ -108,9 +107,26 @@ to your pages.
 ```yaml
 ---
 sitemap:
-  - changefreq: weekly
-  - priority: 0.8
+  changefreq: weekly
+  priority: 0.8
 ---
+```
+
+Alternatively, you can apply the properties to a folder of items by creating a
+[directory data file](https://www.11ty.dev/docs/data-template-dir/).
+
+Assuming you want to apply this to all the files in `posts/*`:
+
+```javascript
+// posts/posts.11tydata.js
+module.exports = () => {
+  return {
+    sitemap: {
+      changefreq: "weekly",
+      priority: 0.8,
+    },
+  }
+}
 ```
 
 For a full list of options, please refer to [Sitemap Item Options](https://github.com/ekalinin/sitemap.js/blob/master/api.md#sitemap-item-options).
@@ -134,7 +150,7 @@ exclude it from the sitemap.
 ```yaml
 ---
 sitemap:
-  - ignore: true
+  ignore: true
 ---
 ```
 
