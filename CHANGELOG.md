@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.0...v2.0.1) (2020-08-25)
+
+
+### Bug Fixes
+
+* avoid crash when options are empty ([fdbc8f1](https://github.com/quasibit/eleventy-plugin-sitemap/commit/fdbc8f164cf5532e7b2484c563525b9a98ddaadf))
+
 # [2.0.0](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v1.0.1...v2.0.0) (2020-06-22)
 
 
