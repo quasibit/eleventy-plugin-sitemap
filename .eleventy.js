@@ -3,8 +3,10 @@
 const sitemap = require("./src/sitemap");
 
 module.exports = (eleventyConfig, options) => {
+  const finalOptions = options || {};
+
   function getSitemap(items) {
-    return sitemap(items, options);
+    return sitemap(items, finalOptions);
   }
 
   eleventyConfig.addLiquidShortcode("sitemap", getSitemap);
