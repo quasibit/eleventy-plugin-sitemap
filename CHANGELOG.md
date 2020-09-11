@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.1...v2.0.2) (2020-09-11)
+
+
+### Bug Fixes
+
+* exclude items with no url ([088e1e9](https://github.com/quasibit/eleventy-plugin-sitemap/commit/088e1e9a53a2983300f6ad18a672409c31947f67))
+
 ## [2.0.1](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.0...v2.0.1) (2020-08-25)
 
 
