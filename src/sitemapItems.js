@@ -5,5 +5,5 @@ const sitemapProperty = require("./sitemapProperty");
 
 module.exports = (items, options) =>
   items
-    .filter((item) => !sitemapProperty(item, "ignore"))
+    .filter((item) => !sitemapProperty(item, "ignore") && item.url)
     .map((item) => sitemapItem(item, options));
