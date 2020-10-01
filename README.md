@@ -12,6 +12,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Options](#options)
+- [Examples](#examples)
 - [Advanced usage](#advanced-usage)
 - [Related plugins](#related-plugins)
 - [Maintainers](#maintainers)
@@ -68,7 +69,7 @@ This shortcode is available for Liquid, Nunjucks, and Javascript templates.
 You can also copy this sample from the examples and adapt it to your needs:
 
 ```sh
-cp node_modules/@quasibit/eleventy-plugin-sitemap/examples/sitemap.njk sitemap.njk
+cp node_modules/@quasibit/eleventy-plugin-sitemap/examples/default/sitemap.njk sitemap.njk
 ```
 
 After creating the sitemap, you should add the sitemap to `robots.txt`:
@@ -96,6 +97,10 @@ eleventyConfig.addPlugin(sitemap, {
   },
 });
 ```
+
+## Examples
+
+See [./examples](./examples) folder.
 
 ## Advanced usage
 
@@ -222,6 +227,8 @@ And then pass that collection to the sitemap shortcode:
 ```njk
 {% sitemap collections.sitemap %}
 ```
+
+You can see an example with dynamic hostnames in [./examples/multilingual/](./examples/multilingual/).
 
 ## Related plugins
 

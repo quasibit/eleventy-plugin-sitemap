@@ -1,4 +1,4 @@
 node_modules
 .vscode
 .eslintcache
-examples/_site
+examples/**/_site

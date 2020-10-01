@@ -11,7 +11,9 @@
   "description": "Eleventy plugin to generate a sitemap.",
   "main": ".eleventy.js",
   "scripts": {
-    "demo": "npx @11ty/eleventy --input=examples --output=examples/_site --config=examples/.eleventy.js",
+    "demo": "run-s demo:*",
+    "demo:default": "npx @11ty/eleventy --input=examples/default --output=examples/default/_site --config=examples/default/.eleventy.js",
+    "demo:multilingual": "npx @11ty/eleventy --input=examples/multilingual --output=examples/multilingual/_site --config=examples/multilingual/.eleventy.js",
     "test": "run-p -c test:*",
     "test:eslint": "eslint \"./**/*.js\" --color",
     "test:prettier": "prettier --check ./**/*.js",
