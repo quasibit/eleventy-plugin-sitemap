@@ -1,6 +1,6 @@
 "use strict";
 
-const sitemap = require("../.eleventy");
+const sitemap = require("../../.eleventy");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(sitemap, {
