@@ -42,22 +42,22 @@
   },
   "homepage": "https://github.com/quasibit/eleventy-plugin-sitemap#readme",
   "dependencies": {
-    "sitemap": "^6.1.5"
+    "sitemap": "^6.3.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
-    "commitizen": "^4.1.2",
-    "cz-conventional-changelog": "^3.2.0",
-    "eslint": "^7.2.0",
-    "eslint-config-hardcore": "^12.2.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.10",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-hardcore": "^12.9.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.5",
-    "semantic-release": "^17.0.8"
+    "prettier": "^2.1.2",
+    "semantic-release": "^17.1.2"
   },
   "peerDependencies": {
     "@11ty/eleventy": "^0.11.0"
