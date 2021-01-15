@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.3...v2.0.4) (2021-01-15)
+
+
+### Bug Fixes
+
+* allow items without data bag ([6c6871f](https://github.com/quasibit/eleventy-plugin-sitemap/commit/6c6871fb4f122aed36e5f22c0d06595501101083))
+
 ## [2.0.3](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.2...v2.0.3) (2020-10-02)
 
 
