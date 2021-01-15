@@ -6,6 +6,7 @@ const sitemapProperty = require("./sitemapProperty");
 module.exports = (item, { lastModifiedProperty }) =>
   sitemapProperty(item, "lastmod") ||
   (lastModifiedProperty &&
+    item.data &&
     item.data[lastModifiedProperty] &&
     sitemapDateTime(item.data[lastModifiedProperty])) ||
   sitemapDateTime(item.date);
