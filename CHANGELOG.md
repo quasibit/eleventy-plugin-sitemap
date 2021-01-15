@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.2...v2.0.3) (2020-10-02)
+
+
+### Bug Fixes
+
+* update sitemap package to latest version ([159f8d8](https://github.com/quasibit/eleventy-plugin-sitemap/commit/159f8d838c7ff77dbcfc0a45e5cd858638062b7c))
+
 ## [2.0.2](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.1...v2.0.2) (2020-09-11)
 
 
