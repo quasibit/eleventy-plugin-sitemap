@@ -1,0 +1,23 @@
+[
+  {
+    "url": "/hello",
+    "data": {
+      "sitemap": {
+        "changefreq": "weekly",
+        "priority": 0.8
+      }
+    }
+  },
+  {
+    "url": "/world",
+    "data": {
+      "sitemap": {
+        "changefreq": "monthly",
+        "priority": 0.4
+      }
+    }
+  },
+  {
+    "url": "/extra"
+  }
+]

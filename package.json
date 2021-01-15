@@ -14,6 +14,7 @@
     "demo": "run-s demo:*",
     "demo:default": "npx @11ty/eleventy --input=examples/default --output=examples/default/_site --config=examples/default/.eleventy.js",
     "demo:multilingual": "npx @11ty/eleventy --input=examples/multilingual --output=examples/multilingual/_site --config=examples/multilingual/.eleventy.js",
+    "demo:data-file": "npx @11ty/eleventy --input=examples/data-file --output=examples/data-file/_site --config=examples/data-file/.eleventy.js",
     "test": "run-p -c test:*",
     "test:eslint": "eslint \"./**/*.js\" --color",
     "test:prettier": "prettier --check ./**/*.js",
@@ -45,6 +46,7 @@
     "sitemap": "^6.3.2"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/changelog": "^5.0.1",
