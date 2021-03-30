@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.4...v2.0.5) (2021-03-30)
+
+
+### Bug Fixes
+
+* update eleventy peer dependency to support v12 ([9eeac05](https://github.com/quasibit/eleventy-plugin-sitemap/commit/9eeac05561a1fc2ea0d7bd7e44f999ef541dcd0d)), closes [#17](https://github.com/quasibit/eleventy-plugin-sitemap/issues/17)
+
 ## [2.0.4](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.3...v2.0.4) (2021-01-15)
 
 
