@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.5...v2.1.0) (2021-04-07)
+
+
+### Features
+
+* **pagination:** added pagination urls to sitemap ([88b914c](https://github.com/quasibit/eleventy-plugin-sitemap/commit/88b914cd8d702271681956e52ebeb2bdfbdce0ee))
+
 ## [2.0.5](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.4...v2.0.5) (2021-03-30)
 
 
