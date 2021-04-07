@@ -15,6 +15,7 @@
     "demo:default": "npx @11ty/eleventy --input=examples/default --output=examples/default/_site --config=examples/default/.eleventy.js",
     "demo:multilingual": "npx @11ty/eleventy --input=examples/multilingual --output=examples/multilingual/_site --config=examples/multilingual/.eleventy.js",
     "demo:data-file": "npx @11ty/eleventy --input=examples/data-file --output=examples/data-file/_site --config=examples/data-file/.eleventy.js",
+    "demo:pagination": "npx @11ty/eleventy --input=examples/pagination --output=examples/pagination/_site --config=examples/pagination/.eleventy.js",
     "test": "run-p -c test:*",
     "test:eslint": "eslint \"./**/*.js\" --color",
     "test:prettier": "prettier --check ./**/*.js",
