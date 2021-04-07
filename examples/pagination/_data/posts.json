@@ -1,0 +1,27 @@
+[
+  {
+    "url": "/post_a",
+    "name": "Post A"
+  },
+  {
+    "url": "/post_b",
+    "name": "Post B"
+  },
+  {
+    "url": "/post_c",
+    "name": "Post C"
+  },
+  {
+    "url": "/post_d",
+    "name": "Post D"
+  },
+  {
+    "url": "/post_sitemap_ignore",
+    "name": "Post sitemap ignore",
+    "data": {
+      "sitemap": {
+        "ignore": true
+      }
+    }
+  }
+]
