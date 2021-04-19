@@ -7,8 +7,9 @@ module.exports = (item) => {
     return [item];
   }
 
-  return item.data.pagination.pages.map((page) => ({
+  return item.data.pagination.pages.map((page, index) => ({
     ...item,
     ...page,
+    url: page.url || item.data.pagination.hrefs[index],
   }));
 };
