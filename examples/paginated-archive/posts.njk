@@ -1,0 +1,41 @@
+---
+pagination:
+  data: posts
+  size: 3
+  alias: postsPage
+permalink: "posts/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber + 1 }}{% endif %}/index.html"
+---
+
+<ul>
+  {%- for post in postsPage -%}
+    <li>
+      <h2>
+        <a href="{{ post.url }}">{{ post.name }}</a>
+      </h2>
+    </li>
+  {%- endfor -%}
+</ul>
+
+{%- if pagination.items | length > 1 -%}
+  <ul>
+    {%- if pagination.href.previous -%}
+      <li><a href="{{ pagination.href.previous }}">Previous</a></li>
+    {%- else -%}
+      <li>Previous</li>
+    {%- endif -%}
+
+    {%- for href in pagination.hrefs -%}
+      {%- if loop.index0 == pagination.pageNumber -%}
+        <li>{{ loop.index }}</li>
+      {%- else -%}
+        <li><a href="{{ href }}">{{ loop.index }}</a></li>
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if pagination.href.next -%}
+      <li><a href="{{ pagination.href.next }}">Next</a></li>
+    {%- else -%}
+      <li>Next</li>
+    {%- endif -%}
+  </ul>
+{%- endif -%}
