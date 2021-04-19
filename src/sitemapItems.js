@@ -1,11 +1,11 @@
 "use strict";
 
+const isIgnored = require("./isIgnored");
 const paginationItems = require("./paginationItems");
 const sitemapItem = require("./sitemapItem");
-const sitemapProperty = require("./sitemapProperty");
 
 module.exports = (items, options) =>
   items
     .flatMap(paginationItems)
-    .filter((item) => !sitemapProperty(item, "ignore") && item.url)
+    .filter((item) => !isIgnored(item))
     .map((item) => sitemapItem(item, options));
