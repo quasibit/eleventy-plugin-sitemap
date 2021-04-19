@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.0...v2.1.1) (2021-04-19)
+
+
+### Bug Fixes
+
+* duplicated items ([bdbce09](https://github.com/quasibit/eleventy-plugin-sitemap/commit/bdbce09bd7dc297cff7cd4e49aaa9a70e5cf3a6e)), closes [#20](https://github.com/quasibit/eleventy-plugin-sitemap/issues/20)
+
 # [2.1.0](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.0.5...v2.1.0) (2021-04-07)
 
 
