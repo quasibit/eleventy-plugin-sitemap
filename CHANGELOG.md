@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.1...v2.1.2) (2021-04-19)
+
+
+### Bug Fixes
+
+* **pagination:** use computed href when url not available ([68693e1](https://github.com/quasibit/eleventy-plugin-sitemap/commit/68693e185ad4e0a060fcdbacf2a9f65e9bae439a)), closes [#22](https://github.com/quasibit/eleventy-plugin-sitemap/issues/22)
+
 ## [2.1.1](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.0...v2.1.1) (2021-04-19)
 
 
