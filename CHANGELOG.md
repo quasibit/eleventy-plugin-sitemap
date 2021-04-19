@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.2...v2.1.3) (2021-04-19)
+
+
+### Bug Fixes
+
+* **pagination:** missing changes for computed href fix ([cf07020](https://github.com/quasibit/eleventy-plugin-sitemap/commit/cf070204211880e27e1f012410bfa99093ac8acf)), closes [#22](https://github.com/quasibit/eleventy-plugin-sitemap/issues/22)
+
 ## [2.1.2](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.1...v2.1.2) (2021-04-19)
 
 
