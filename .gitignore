@@ -1,4 +1,15 @@
+# dependencies
 node_modules
+
+# ide
 .vscode
+
+# cache
 .eslintcache
+
+# output
 examples/**/_site
+
+# testing
+.nyc_output
+coverage
