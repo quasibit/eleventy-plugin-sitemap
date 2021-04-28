@@ -2,4 +2,5 @@
 
 const sitemapProperty = require("./sitemapProperty");
 
-module.exports = (item) => sitemapProperty(item, "ignore") || !item.url;
+module.exports = (item) =>
+  !item || !item.url || sitemapProperty(item, "ignore");
