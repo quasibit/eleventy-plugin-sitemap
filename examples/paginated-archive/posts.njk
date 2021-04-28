@@ -8,11 +8,7 @@ permalink: "posts/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber + 
 
 <ul>
   {%- for post in postsPage -%}
-    <li>
-      <h2>
-        <a href="{{ post.url }}">{{ post.name }}</a>
-      </h2>
-    </li>
+    <li>{{ post.name }}</li>
   {%- endfor -%}
 </ul>
 
