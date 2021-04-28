@@ -15,3 +15,7 @@ test("ignores items without URL", (t) => {
 test("ignores empty items", (t) => {
   t.true(isIgnored());
 });
+
+test("returns boolean", (t) => {
+  t.true(isIgnored({ data: { sitemap: { ignore: 1 } } }));
+});
