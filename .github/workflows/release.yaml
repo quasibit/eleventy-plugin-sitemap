@@ -8,14 +8,21 @@ jobs:
     name: Release
     runs-on: ubuntu-20.04
     steps:
+
+      # Checkout repository
       - name: Checkout
         uses: actions/checkout@v2
+
+      # Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v2-beta
         with:
           node-version: '12'
+      # Install
       - name: Install dependencies
         run: npm ci
+
+      # Release
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
