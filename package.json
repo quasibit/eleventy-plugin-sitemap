@@ -22,7 +22,9 @@
     "lint:prettier": "prettier --check ./**/*.js",
     "test": "ava",
     "coverage": "nyc --reporter=lcov --reporter=text ava",
-    "format": "prettier --write ./**/*.js",
+    "format": "run-s format:*",
+    "format:prettier": "prettier --write ./**/*.js",
+    "format:eslint": "npm run lint:eslint --fix",
     "commit": "git-cz"
   },
   "repository": {
