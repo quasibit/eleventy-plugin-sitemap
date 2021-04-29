@@ -43,7 +43,7 @@ test("handles paginated archive", (t) => {
   const item = {
     data: {
       pagination: {
-        pages: new Array(total).fill(undefined),
+        pages: Array.from({ length: total }).fill(undefined),
         hrefs,
       },
     },
