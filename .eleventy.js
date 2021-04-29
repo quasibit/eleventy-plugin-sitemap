@@ -2,6 +2,12 @@
 
 const sitemap = require("./src/sitemap");
 
+/**
+ * Add the sitemap plugin to the Eleventy configuration.
+ *
+ * @param {object} eleventyConfig Eleventy configuration object.
+ * @param {object} options Plugin user options.
+ */
 module.exports = function eleventyPluginSitemap(eleventyConfig, options) {
   const finalOptions = options || {};
 

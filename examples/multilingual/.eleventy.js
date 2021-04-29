@@ -2,6 +2,12 @@
 
 const sitemap = require("../../.eleventy");
 
+/**
+ * Example of creating a sitemap for a multilingual site.
+ * A custom sitemap collection is created with the necessary lang attribute.
+ *
+ * @param {object} eleventyConfig Eleventy configuration object.
+ */
 module.exports = (eleventyConfig) => {
   const hostnames = {
     en: "https://example.com",
