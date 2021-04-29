@@ -1,6 +1,55 @@
 {
-  "extends": ["hardcore", "hardcore/node"],
+  "extends": ["hardcore", "hardcore/node", "plugin:jsdoc/recommended"],
   "env": {
     "node": true
-  }
+  },
+  "parserOptions": {
+    "es2021": false,
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "sourceType": "script"
+    }
+  },
+  "rules": {
+    "import/no-commonjs": "off",
+    "unicorn/prefer-module": "off",
+    "putout/putout": [
+      "error",
+      {
+        "rules": {
+          "apply-optional-chaining": "off",
+          "convert-commonjs-to-esm/require": "off",
+          "convert-commonjs-to-esm/exports": "off",
+          "convert-commonjs-to-esm/commons": "off"
+        }
+      }
+    ],
+    "jsdoc/require-jsdoc": [
+      "error",
+      {
+        "publicOnly": true,
+        "require": {
+          "ArrowFunctionExpression": true,
+          "ClassDeclaration": true,
+          "ClassExpression": true,
+          "FunctionDeclaration": true,
+          "FunctionExpression": true,
+          "MethodDefinition": true
+        }
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["./**/*.test.js"],
+      "extends": ["plugin:ava/recommended"],
+      "parserOptions": {
+        "sourceType": "script"
+      },
+      "rules": {
+        "node/no-unpublished-require": 0,
+        "id-length": ["error", { "exceptions": ["t"] }]
+      }
+    }
+  ]
 }
