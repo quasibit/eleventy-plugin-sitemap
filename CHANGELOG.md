@@ -1,3 +1,16 @@
+## [2.1.4](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.3...v2.1.4) (2021-04-29)
+
+
+### Bug Fixes
+
+* ignore empty items ([16c8a37](https://github.com/quasibit/eleventy-plugin-sitemap/commit/16c8a37fec87a64a294460dba24b8ae70ff2b85b))
+* **examples:** remove post links from paginated archive example ([9f84066](https://github.com/quasibit/eleventy-plugin-sitemap/commit/9f840662a93a37466b9a754022a49606dface986))
+* **isignored:** return boolean ([5b86315](https://github.com/quasibit/eleventy-plugin-sitemap/commit/5b86315f725fcda6140145d0b6169dedefbd7f5c))
+* **ispagination:** return boolean ([f110290](https://github.com/quasibit/eleventy-plugin-sitemap/commit/f110290cea4272da511dd6ba7c08aadc213123b8))
+* **lastmod:** undefined options ([63f1e83](https://github.com/quasibit/eleventy-plugin-sitemap/commit/63f1e83b3020bc65787e453c7f68440ff38258ee))
+* **paginationitems:** undefined page ([a3b8134](https://github.com/quasibit/eleventy-plugin-sitemap/commit/a3b8134d854dfdd3f0be84f314a5c5f7d2efc7b7))
+* validate date ([168cca8](https://github.com/quasibit/eleventy-plugin-sitemap/commit/168cca81a3b917e1417043818c2f3a11ec3d6af4))
+
 ## [2.1.3](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.2...v2.1.3) (2021-04-19)
 
 
