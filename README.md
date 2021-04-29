@@ -8,7 +8,8 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Eleventy](https://www.11ty.dev/) plugin to generate a sitemap using [ekalinin/sitemap](https://github.com/ekalinin/sitemap.js) generator.
+[Eleventy](https://www.11ty.dev/) plugin to generate a sitemap using
+[ekalinin/sitemap](https://github.com/ekalinin/sitemap.js) generator.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -233,7 +234,8 @@ You can see an example with dynamic hostnames in [./examples/multilingual/](./ex
 
 ## Related plugins
 
-- [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema): generate JSON-LD structured data.
+- [@quasibit/eleventy-plugin-schema](https://github.com/quasibit/eleventy-plugin-schema):
+  generate JSON-LD structured data.
 
 ## Maintainers
 

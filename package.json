@@ -20,11 +20,13 @@
     "lint": "run-p --continue-on-error lint:*",
     "lint:eslint": "eslint \"./**/*.js\" --color",
     "lint:prettier": "prettier --check ./**/*.js",
+    "lint:markdown": "markdownlint \"**/*.md\"",
     "test": "ava",
     "coverage": "nyc --reporter=lcov --reporter=text ava",
     "format": "run-s format:*",
     "format:prettier": "prettier --write ./**/*.js",
     "format:eslint": "npm run lint:eslint --fix",
+    "format:markdown": "npm run lint:markdown --fix",
     "commit": "git-cz"
   },
   "repository": {
@@ -64,6 +66,7 @@
     "eslint-plugin-ava": "^12.0.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
+    "markdownlint-cli": "^0.27.1",
     "npm-run-all": "^4.1.5",
     "nyc": "^15.1.0",
     "prettier": "^2.1.2",
@@ -88,6 +91,7 @@
     "*.js": [
       "eslint --cache --fix",
       "prettier --write"
-    ]
+    ],
+    "*.md": ["markdownlint --fix"]
   }
 }
