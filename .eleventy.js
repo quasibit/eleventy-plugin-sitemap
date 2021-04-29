@@ -1,5 +1,9 @@
 "use strict";
 
+// Polyfill for supporting Node v10.
+// eslint-disable-next-line import/no-unassigned-import
+require("array-flat-polyfill");
+
 const sitemap = require("./src/sitemap");
 
 /**

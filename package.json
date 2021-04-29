@@ -51,6 +51,7 @@
   },
   "homepage": "https://github.com/quasibit/eleventy-plugin-sitemap#readme",
   "dependencies": {
+    "array-flat-polyfill": "^1.0.1",
     "sitemap": "^6.3.2"
   },
   "devDependencies": {
@@ -59,11 +60,11 @@
     "@commitlint/config-conventional": "^12.1.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
-    "ava": "^3.15.0",
+    "ava": "^2.4.0",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.25.0",
-    "eslint-config-hardcore": "^19.2.0",
+    "eslint-config-hardcore": "^13.1.0",
     "eslint-plugin-ava": "^12.0.0",
     "eslint-plugin-jsdoc": "^32.3.3",
     "husky": "^4.3.0",
@@ -96,6 +97,11 @@
     ],
     "*.md": [
       "markdownlint --fix"
+    ]
+  },
+  "ava": {
+    "require": [
+      "array-flat-polyfill"
     ]
   }
 }
