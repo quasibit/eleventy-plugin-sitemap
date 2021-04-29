@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = (item, index, collection) => {
+module.exports = function isDuplicated(item, index, collection) {
   if (!collection) {
     return false;
   }

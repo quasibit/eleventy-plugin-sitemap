@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = (date) => {
+module.exports = function sitemapDateTime(date) {
   if (!date) {
     return;
   }

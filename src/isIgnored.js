@@ -2,5 +2,6 @@
 
 const sitemapProperty = require("./sitemapProperty");
 
-module.exports = (item) =>
-  !item || !item.url || Boolean(sitemapProperty(item, "ignore"));
+module.exports = function isIgnored(item) {
+  return !item || !item.url || Boolean(sitemapProperty(item, "ignore"));
+};

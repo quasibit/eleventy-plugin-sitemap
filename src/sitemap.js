@@ -4,7 +4,7 @@ const { SitemapStream, streamToPromise } = require("sitemap");
 
 const sitemapItems = require("./sitemapItems");
 
-module.exports = async (items, options) => {
+module.exports = async function sitemap(items, options) {
   const streamOptions = options && options.sitemap;
   const stream = new SitemapStream(streamOptions);
   const links = sitemapItems(items, options);

@@ -1,4 +1,5 @@
 "use strict";
 
-module.exports = (item, property) =>
-  item && item.data && item.data.sitemap && item.data.sitemap[property];
+module.exports = function sitemapProperty(item, property) {
+  return item && item.data && item.data.sitemap && item.data.sitemap[property];
+};

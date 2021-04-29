@@ -2,8 +2,12 @@
 
 const lastmod = require("./lastmod");
 
-module.exports = (item, options) => ({
-  ...((item.data && item.data.sitemap) || {}),
-  url: item.url,
-  lastmod: lastmod(item, options),
-});
+module.exports = function sitemapItem(item, options) {
+  const sitemapData = (item.data && item.data.sitemap) || {};
+
+  return {
+    ...sitemapData,
+    url: item.url,
+    lastmod: lastmod(item, options),
+  };
+};

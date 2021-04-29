@@ -2,7 +2,7 @@
 
 const sitemap = require("./src/sitemap");
 
-module.exports = (eleventyConfig, options) => {
+module.exports = function eleventyPluginSitemap(eleventyConfig, options) {
   const finalOptions = options || {};
 
   function getSitemap(items) {

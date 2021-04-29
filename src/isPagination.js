@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = (item) => {
+module.exports = function isPagination(item) {
   if (
     !item ||
     !item.data ||
