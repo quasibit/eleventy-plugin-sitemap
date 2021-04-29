@@ -3,6 +3,28 @@
   "env": {
     "node": true
   },
+  "parserOptions": {
+    "es2021": false,
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "sourceType": "script"
+    }
+  },
+  "rules": {
+    "import/no-commonjs": "off",
+    "unicorn/prefer-module": "off",
+    "putout/putout": [
+      "error",
+      {
+        "rules": {
+          "apply-optional-chaining": "off",
+          "convert-commonjs-to-esm/require": "off",
+          "convert-commonjs-to-esm/exports": "off",
+          "convert-commonjs-to-esm/commons": "off"
+        }
+      }
+    ]
+  },
   "overrides": [
     {
       "files": ["./**/*.test.js"],
