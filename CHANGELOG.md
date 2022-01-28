@@ -1,3 +1,10 @@
+## [2.1.5](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.4...v2.1.5) (2022-01-28)
+
+
+### Bug Fixes
+
+* add support for eleventy v1 ([c1cec36](https://github.com/quasibit/eleventy-plugin-sitemap/commit/c1cec3661cc83bc77abc6efd1da0c0828ba233d8)), closes [#40](https://github.com/quasibit/eleventy-plugin-sitemap/issues/40)
+
 ## [2.1.4](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.3...v2.1.4) (2021-04-29)
 
 
