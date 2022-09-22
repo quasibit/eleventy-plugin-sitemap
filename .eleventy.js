@@ -4,6 +4,7 @@
 // eslint-disable-next-line import/no-unassigned-import
 require("array-flat-polyfill");
 
+const pkg = require("./package.json");
 const sitemap = require("./src/sitemap");
 
 /**
@@ -13,6 +14,14 @@ const sitemap = require("./src/sitemap");
  * @param {object} options Plugin user options.
  */
 module.exports = function eleventyPluginSitemap(eleventyConfig, options) {
+  try {
+    eleventyConfig.versionCheck(pkg["11ty"].compatibility);
+  } catch (e) {
+    console.log(
+      `WARN: Eleventy Plugin (${pkg.name}) Compatibility: ${e.message}`
+    );
+  }
+
   const finalOptions = options || {};
 
   function getSitemap(items) {
