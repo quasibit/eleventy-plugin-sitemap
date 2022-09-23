@@ -1,3 +1,11 @@
+# [2.2.0](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.5...v2.2.0) (2022-09-23)
+
+
+### Features
+
+* **11ty:** check compat when initialising ([3d8d7b8](https://github.com/quasibit/eleventy-plugin-sitemap/commit/3d8d7b827170b71f74f06cead37abdb3ac1f2102))
+* **11ty:** use compatibility api ([1919753](https://github.com/quasibit/eleventy-plugin-sitemap/commit/1919753dc63248daf33e64528a4e799df8f02a26))
+
 ## [2.1.5](https://github.com/quasibit/eleventy-plugin-sitemap/compare/v2.1.4...v2.1.5) (2022-01-28)
 
 
