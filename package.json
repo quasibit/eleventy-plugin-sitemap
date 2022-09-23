@@ -76,8 +76,8 @@
     "semantic-release": "^17.4.2",
     "sinon": "^10.0.0"
   },
-  "peerDependencies": {
-    "@11ty/eleventy": ">=0.11.0"
+  "11ty": {
+    "compatibility": ">=0.11.0"
   },
   "config": {
     "commitizen": {
