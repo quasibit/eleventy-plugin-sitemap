@@ -66,7 +66,7 @@ The above snippet does the following:
 As the first argument to the shortcode, you pass the collection of items that
 you want to use in the sitemap.
 
-This shortcode is available for Liquid, Nunjucks, and Javascript templates.
+This shortcode is available for Liquid, Nunjucks, and Javascript templates. It will not work if placed in a Markdown file. 
 
 You can also copy this sample from the examples and adapt it to your needs:
 
