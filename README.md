@@ -34,7 +34,7 @@ Add the plugin to your [Eleventy configuration](https://www.11ty.dev/docs/config
 ```js
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
       hostname: "https://example.com",
@@ -67,6 +67,7 @@ As the first argument to the shortcode, you pass the collection of items that
 you want to use in the sitemap.
 
 This shortcode is available for Liquid, Nunjucks, and Javascript templates.
+It will not work if placed in a Markdown file.
 
 You can also copy this sample from the examples and adapt it to your needs:
 
@@ -117,6 +118,7 @@ sitemap:
   changefreq: weekly
   priority: 0.8
 ---
+
 ```
 
 Alternatively, you can apply the properties to a folder of items by creating a
@@ -132,8 +134,8 @@ module.exports = () => {
       changefreq: "weekly",
       priority: 0.8,
     },
-  }
-}
+  };
+};
 ```
 
 For a full list of options, please refer to [Sitemap Item Options](https://github.com/ekalinin/sitemap.js/blob/master/api.md#sitemap-item-options).
@@ -149,6 +151,7 @@ property, which will exclude them from all collections.
 ---
 eleventyExcludeFromCollections: true
 ---
+
 ```
 
 You can use the `ignore` property on the `sitemap` data, which will only
@@ -159,6 +162,7 @@ exclude it from the sitemap.
 sitemap:
   ignore: true
 ---
+
 ```
 
 Or you can create a [custom collection](https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting)
@@ -166,8 +170,8 @@ that excludes the items that you don't want in the sitemap and then pass that
 collection to the shortcode.
 
 ```js
-eleventyConfig.addCollection("sitemap", function(collectionApi) {
-  return collectionApi.getAll().filter(item => {
+eleventyConfig.addCollection("sitemap", function (collectionApi) {
+  return collectionApi.getAll().filter((item) => {
     // Place your condition here for excluding items from the sitemap.
     return true;
   });
@@ -183,44 +187,43 @@ Specify the collection in the shortcode:
 ### Create a multilingual sitemap
 
 For creating a [multilingual sitemap](https://webmasters.googleblog.com/2012/05/multilingual-and-multinational-site.html)
-you need to add alternate  language child links for each link.
+you need to add alternate language child links for each link.
 
 You could do this with [front matter](#customizing-sitemap-properties) and the
 [links property](https://github.com/ekalinin/sitemap.js/blob/master/api.md#sitemap-item-options)
 , but in most cases it's easier to do this with a custom collection.
 
 ```js
-eleventyConfig.addCollection("sitemap", function(collectionApi) {
-  return collectionApi
-    .getAll()
-    .map((item, index, all) => {
-      return {
-        url: item.url,
-        date: item.date,
-        data: {
-          ...item.data,
-          sitemap: {
-            ...item.data.sitemap,
-            links:
-              all
-                // Find all the translations of the current item.
-                // This assumes that all translated items that belong together
-                // have the same `translationKey` value in the front matter.
-                .filter(other => other.data.translationKey === item.data.translationKey)
+eleventyConfig.addCollection("sitemap", function (collectionApi) {
+  return collectionApi.getAll().map((item, index, all) => {
+    return {
+      url: item.url,
+      date: item.date,
+      data: {
+        ...item.data,
+        sitemap: {
+          ...item.data.sitemap,
+          links: all
+            // Find all the translations of the current item.
+            // This assumes that all translated items that belong together
+            // have the same `translationKey` value in the front matter.
+            .filter(
+              (other) => other.data.translationKey === item.data.translationKey
+            )
 
-                // Map each translation into an alternate link. See https://github.com/ekalinin/sitemap.js/blob/master/api.md#ILinkItem
-                // Here we assume each item has a `lang` value in the front
-                // matter. See https://support.google.com/webmasters/answer/189077#language-codes
-                .map(translation => {
-                  return {
-                    url: translation.url,
-                    lang: translation.data.lang,
-                  };
-                }),
-          },
+            // Map each translation into an alternate link. See https://github.com/ekalinin/sitemap.js/blob/master/api.md#ILinkItem
+            // Here we assume each item has a `lang` value in the front
+            // matter. See https://support.google.com/webmasters/answer/189077#language-codes
+            .map((translation) => {
+              return {
+                url: translation.url,
+                lang: translation.data.lang,
+              };
+            }),
         },
-      }
-    });
+      },
+    };
+  });
 });
 ```
 
